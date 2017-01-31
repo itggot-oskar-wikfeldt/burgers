@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 12 24" style="enable-background:new 0 0 12 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#616161;}
+	.st2{display:none;fill:none;}
+</style>
+<symbol  id="ic_x5F_menu_x5F_white" viewBox="0 -24 24 24">
+	<rect y="-24" class="st0" width="24" height="24"/>
+	<path class="st1" d="M3-18h18v2H3V-18z M3-13h18v2H3V-13z M3-6v-2h18v2H3z"/>
+	<rect y="-24" class="st2" width="24" height="24"/>
+</symbol>
+<symbol  id="ic_x5F_more_x5F_vert_x5F_white" viewBox="0 -24 12 24">
+	<rect y="-24" class="st0" width="12" height="24"/>
+	<path class="st1" d="M6-8c1.1,0,2,0.9,2,2S7.1-4,6-4S4-4.9,4-6S4.9-8,6-8z M6-10c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S7.1-10,6-10
+		z M6-16c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S7.1-16,6-16z"/>
+</symbol>
+<symbol  id="ic_x5F_search_x5F_white" viewBox="0 -24 24 24">
+	<g>
+		<g>
+			<path class="st1" d="M15.5-14h-0.8l-0.3,0.3c1,1.1,1.6,2.6,1.6,4.2C16-5.9,13.1-3,9.5-3S3-5.9,3-9.5C3-13.1,5.9-16,9.5-16
+				c1.6,0,3.1,0.6,4.2,1.6l0.3-0.3v-0.8l5-5l1.5,1.5L15.5-14z M9.5-14C7-14,5-12,5-9.5C5-7,7-5,9.5-5S14-7,14-9.5
+				C14-12,12-14,9.5-14z"/>
+		</g>
+	</g>
+	<rect x="0" y="-24" class="st0" width="24" height="24"/>
+</symbol>
+<use xlink:href="#ic_x5F_search_x5F_white"  width="24" height="24" id="XMLID_3_" x="0" y="-24" transform="matrix(1 0 0 -1 2 1.200228e-04)" style="display:none;overflow:visible;"/>
+<use xlink:href="#ic_x5F_more_x5F_vert_x5F_white"  width="12" height="24" id="XMLID_2_" y="-24" transform="matrix(1 0 0 -1 0 0)" style="overflow:visible;"/>
+<use xlink:href="#ic_x5F_menu_x5F_white"  width="24" height="24" id="XMLID_11_" y="-24" transform="matrix(1 0 0 -1 2 0)" style="display:none;overflow:visible;"/>
+</svg>
