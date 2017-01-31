@@ -2,9 +2,11 @@ body {
     background-color: white;
     font-family: Roboto;
     margin: 0;
+    display: flex;
+    flex-direction: row;
 }
 
-.main {
+#main {
     width: 360px;
     height: 640px;
     width: 100vw;
@@ -28,13 +30,11 @@ a.selected {
 .logo {
     height: 144px;
     align-self: center;
-    margin-top: 120px;
+    margin-top: 16px;
 }
 
 div.selected {
-    background-color: red;
-    width: 100%;
-    height: 2px;
+    box-shadow: inset 0px -2px 0px 0px red;
 }
 
 .tab {
@@ -47,22 +47,32 @@ div.selected {
     text-align: center;
 }
 
-.toolbar {
+#toolbar {
     width: 100%;
     min-height: 104px;
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     position: fixed;
+    z-index: 1;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-.taskbar {
+#taskbar {
     width: 100%;
     height: 24px;
     background-color: #dad8d4;
 }
+#content {
+    z-index: 0;
+    margin-top: 104px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-.mainbar {
+#mainbar {
     width: 100%;
     height: 56px;
     display: flex;
@@ -134,7 +144,7 @@ h1 {
     margin-left: 32px;
 }
 
-.tabs {
+#tabs {
     width: 100%;
     height: 48px;
     display: flex;
@@ -142,5 +152,15 @@ h1 {
     justify-content: space-around;
     font-weight: bold;
     font-size: 14px;
+}
+
+#hamburger {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    margin-left: -50vw;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+    z-index: 2;
 }
 

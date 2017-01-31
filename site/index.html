@@ -9,10 +9,10 @@
 </head>
 <body>
 
-<div class="main">
-    <div class="toolbar">
+<div id="main">
+    <div id="toolbar">
 
-        <div class="mainbar">
+        <div id="mainbar">
             <div class="left">
                 <img src="img/menu.svg" class="icon" id = "menu">
                 <h1>Välj måltid</h1>
@@ -21,10 +21,9 @@
             <img src="img/more.svg" class="icon" id="more">
         </div>
 
-        <div class="tabs">
-            <div class="tab">
-                <a href=""  class = "selected">MAX</a>
-                <div class = "selected"></div>
+        <div id="tabs">
+            <div class="tab selected">
+                <a href="" class = "selected">MAX</a>
             </div>
             <div class="tab">
                 <a href="">MCDONALDS</a>
@@ -36,35 +35,36 @@
 
     </div>
 
-    <img src="img/max.svg" class="logo">
+    <div id="content">
+        <img src="img/max.svg" class="logo">
 
-    <ul>
-        <li>
-            <div class="left">
-                <img src="img/original.svg" class="avatar">
-                <div class="label">
-                    <h2>Originalmål</h2>
-                    <h3>Pommes frites & Coca Cola</h3>
+        <ul>
+            <li>
+                <div class="left">
+                    <img src="img/original.svg" class="avatar">
+                    <div class="label">
+                        <h2>Originalmål</h2>
+                        <h3>Pommes frites & Coca Cola</h3>
+                    </div>
                 </div>
-            </div>
-            <img src="img/info.svg" class="icon" class="info">
-        </li>
-        <li>
-            <div class="left">
-                <img src="img/frisco.svg" class="avatar">
-                <div class="label">
-                    <h2>Friscomål</h2>
-                    <h3>Creole fries & Fanta Mezzo</h3>
+                <img src="img/info.svg" class="icon" class="info">
+            </li>
+            <li>
+                <div class="left">
+                    <img src="img/frisco.svg" class="avatar">
+                    <div class="label">
+                        <h2>Friscomål</h2>
+                        <h3>Creole fries & Fanta Mezzo</h3>
+                    </div>
                 </div>
-            </div>
-            <img src="img/info.svg" class="icon" class="info">
-        </li>
-    </ul>
-
+                <img src="img/info.svg" class="icon" class="info">
+            </li>
+        </ul>
+    </div>
 </div>
 
-<div class="hamburger">
-    
+<div id="hamburger">
+
 </div>
 
 <script src="js/main.js"></script>
