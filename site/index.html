@@ -14,7 +14,7 @@
 
         <div id="mainbar">
             <div class="left">
-                <img src="img/menu.svg" class="icon" id = "menu">
+                <img src="img/menu.svg" class="icon" id = "menu" onclick="openMenu()">
                 <h1>Välj måltid</h1>
             </div>
             <img src="img/search.svg" class="icon" id = "search">
@@ -36,12 +36,12 @@
     </div>
 
     <div id="content">
-        <img src="img/max.svg" class="logo">
+        <img src="img/max.svg" id="logo">
 
         <ul>
             <li>
                 <div class="left">
-                    <img src="img/original.svg" class="avatar">
+                    <img src="img/original.jpg" class="avatar">
                     <div class="label">
                         <h2>Originalmål</h2>
                         <h3>Pommes frites & Coca Cola</h3>
@@ -51,7 +51,7 @@
             </li>
             <li>
                 <div class="left">
-                    <img src="img/frisco.svg" class="avatar">
+                    <img src="img/frisco.jpg" class="avatar">
                     <div class="label">
                         <h2>Friscomål</h2>
                         <h3>Creole fries & Fanta Mezzo</h3>
@@ -62,11 +62,19 @@
         </ul>
     </div>
 </div>
+<div id="hamContainer">
+    <div id="hamburger">
+        <img src="img/logo.jpg" id="burgerLogo">
+        <ul>
+            <li class="hamList selected">
+                <img src="img/max.svg" class="icon hamList">
+                <h4>Max</h4>
+            </li>
+        </ul>
+    </div>
 
-<div id="hamburger">
-
+    <div id="scrim" onclick="closeMenu()"></div>
 </div>
-
 <script src="js/main.js"></script>
 
 </body>
