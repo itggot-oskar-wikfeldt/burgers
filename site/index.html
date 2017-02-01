@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 
 </head>
 <body>
@@ -39,7 +40,7 @@
         <img src="img/max.svg" id="logo">
 
         <ul>
-            <li>
+            <li class="first">
                 <div class="left">
                     <img src="img/original.jpg" class="avatar">
                     <div class="label">
@@ -64,11 +65,15 @@
 </div>
 <div id="hamContainer">
     <div id="hamburger">
-        <img src="img/logo.jpg" id="burgerLogo">
-        <ul>
-            <li class="hamList selected">
-                <img src="img/max.svg" class="icon hamList">
-                <h4>Max</h4>
+        <!--<img src="img/logo.jpg" id="burgerLogo">-->
+        <ul id="hamList">
+            <li class="hamListItem selected">
+                <img src="" class="icon hamListItem">
+                <h4 class="selected">Välj måltid</h4>
+            </li>
+            <li class="hamListItem">
+                <img src="" class="icon hamListItem">
+                <h4>Inställningar</h4>
             </li>
         </ul>
     </div>
