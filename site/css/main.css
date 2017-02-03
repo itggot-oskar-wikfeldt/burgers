@@ -215,10 +215,9 @@ li.hamListItem {
     flex-grow: 1;
     max-width: 280px;
     flex-basis: 280px;
-    --margin-left: -280px;
     --shadow-color: rgba(0,0,0,0);
-    margin-left: var(--margin-left);
-    box-shadow: 0px 2px 16px 0px var(--shadow-color);
+    margin-left: -280px;
+    box-shadow: 0px 0px 16px 0px var(--shadow-color);
     transition: margin-left 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(1, 0, 1,0);
     background-color: #fafaf9;
     pointer-events: auto;
@@ -236,7 +235,7 @@ li.hamListItem {
 }
 
 #hamburger.active {
-    --margin-left: 0px;
+    margin-left: 0px;
     transition: margin-left 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(0, 1, 0, 1);
     --shadow-color: rgba(0,0,0,0.26);
 }
