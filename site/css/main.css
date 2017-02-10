@@ -23,7 +23,7 @@ a {
     opacity: 0.38;
 }
 
-a.selected {
+.selected a {
     color: black;
     opacity: 0.87;
 }
@@ -175,18 +175,18 @@ ul {
 
 }
 
-li.hamListItem {
+#hamList li {
     height: 48px;
     margin-top: 8px;
 }
 
 #hamList {
     margin-top: 56px;
-    box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.26);;
+    box-shadow: inset 0px 5px 3px -5px rgba(0,0,0,0.26);;
 }
 
-.icon.hamListItem {
-    margin-left: 0;
+#hamList li img {
+    margin-left: 0 !important;
 }
 
 #tabs {

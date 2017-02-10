@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>burgers</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="main">
+    <div id="toolbar">
+
+        <div id="mainbar">
+            <div class="left">
+                <img src="img/menu.svg" class="icon" id = "menu" onclick="openMenu()">
+                <h1>Välj måltid</h1>
+            </div>
+            <img src="img/search.svg" class="icon" id = "search">
+            <img src="img/more.svg" class="icon" id="more">
+        </div>
+
+        <div id="tabs">
+            <div class="tab selected">
+                <a href="choose_max.html">MAX</a>
+            </div>
+            <div class="tab">
+                <a href="choose_mcdonalds.html">MCDONALDS</a>
+            </div>
+            <div class="tab">
+                <a href="choose_bk.html">BURGER KING</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="content">
+        <img src="img/max.svg" id="logo">
+
+        <ul>
+            <li class="first">
+                <div class="left">
+                    <img src="img/original.jpg" class="avatar">
+                    <div class="label">
+                        <h2>Originalmål</h2>
+                        <h3>Pommes frites & Coca Cola</h3>
+                    </div>
+                </div>
+                <img src="img/info.svg" class="icon" class="info">
+            </li>
+            <li>
+                <div class="left">
+                    <img src="img/frisco.jpg" class="avatar">
+                    <div class="label">
+                        <h2>Friscomål</h2>
+                        <h3>Creole fries & Fanta Mezzo</h3>
+                    </div>
+                </div>
+                <img src="img/info.svg" class="icon" class="info">
+            </li>
+            <li>
+                <div class="left">
+                    <img src="img/nuggets.jpg" class="avatar">
+                    <div class="label">
+                        <h2>Nuggetsmål</h2>
+                        <h3>Pommes frites and a large Coke</h3>
+                    </div>
+                </div>
+                <img src="img/info.svg" class="icon" class="info">
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="hamContainer">
+    <div id="hamburger">
+        <!--<img src="img/logo.jpg" id="burgerLogo">-->
+        <ul id="hamList">
+            <li class="selected">
+                <img src="img/hamburger.svg" class="icon">
+                <h4 class="selected">Välj måltid</h4>
+            </li>
+            <li>
+                <img src="img/settings.svg" class="icon">
+                <h4>Inställningar</h4>
+            </li>
+        </ul>
+    </div>
+
+    <div id="scrim" onclick="closeMenu()"></div>
+</div>
+<script src="js/main.js"></script>
+
+</body>
+</html>
