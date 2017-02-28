@@ -6,20 +6,43 @@ body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.left h5, #hamList a h5 {
+    margin-left: 32px;
+}
+
+h1, h2, h3, h4, h5, h6, .subheading, .body2, .body1, .caption, .button {
     margin: 0;
     opacity: 0.87;
 }
 
 h5 {
-    margin-left: 32px;
     font-weight: 500;
+}
+
+.subheading {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.body2 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.body1 {
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.54;
+}
+
+.caption {
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .button {
     font-weight: 500;
     font-size: 14px;
-    opacity: 0.87;
 }
 
 #main {
@@ -107,17 +130,16 @@ a {
     width: 40px;
     height: 40px;
     margin: 0px;
-    margin-right: 16px;
     clip-path: circle(20px at center);
 }
 
 .label {
-
+    margin-left: 16px;
+    line-height: 1.4;
 }
 
-#more {
-    width: 12px;
-    margin-right: 16px;
+#demo-menu-lower-right {
+    margin-right: 6px;
 }
 
 .left {
