@@ -4,8 +4,11 @@
 	<title>burgers</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 <body>
@@ -16,13 +19,25 @@
         <div id="mainbar">
             <div class="left">
                 <img src="img/menu.svg" class="icon" id = "menu" onclick="openMenu()">
-                <h1>Välj måltid</h1>
+                <h5>Välj måltid</h5>
             </div>
             <img src="img/search.svg" class="icon" id = "search">
-            <img src="img/more.svg" class="icon" id="more">
+            <!-- Right aligned menu below button -->
+            <button id="demo-menu-lower-right"
+                    class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+            </button>
+
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="demo-menu-lower-right">
+                <li class="mdl-menu__item">Some Action</li>
+                <li class="mdl-menu__item">Another Action</li>
+                <li disabled class="mdl-menu__item">Disabled Action</li>
+                <li class="mdl-menu__item">Yet Another Action</li>
+            </ul>
         </div>
 
-        <div id="tabs">
+        <div id="tabs" class="button">
             <a href="choose_max.html" class="selected">
                 MAX
             </a>
@@ -78,11 +93,11 @@
         <div id="hamList">
             <a href="choose_max.html" class="selected first">
                 <img src="img/hamburger.svg" class="icon">
-                <h4>Välj måltid</h4>
+                <h5 class="button">Välj måltid</h5>
             </a>
             <a href = "settings.html">
                 <img src="img/settings.svg" class="icon">
-                <h4>Inställningar</h4>
+                <h5 class="button">Inställningar</h5>
             </a>
         </div>
     </div>

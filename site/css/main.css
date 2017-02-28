@@ -1,14 +1,28 @@
 body {
     background-color: #fafaf9;
-    font-family: Roboto,  sans-serif;
-    font-weight: 400;
     margin: 0;
     display: flex;
     flex-direction: row;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    opacity: 0.87;
+}
+
+h5 {
+    margin-left: 32px;
+    font-weight: 500;
+}
+
+.button {
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.87;
 }
 
 #main {
-    width: 360px;
     height: 640px;
     width: 100vw;
     margin: auto;
@@ -31,7 +45,6 @@ a {
 
 #tabs .selected {
     box-shadow: inset 0px -2px 0px 0px red;
-    color: black;
     opacity: 0.87;
 }
 
@@ -47,6 +60,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0.38;
 }
 
 #toolbar {
@@ -99,37 +113,6 @@ a {
 
 .label {
 
-}
-
-h1 {
-    font-size: 20px;
-    font-weight: 500;
-    opacity: 0.87;
-    margin: 0px;
-    margin-right: 0;
-    margin-left: 32px;
-}
-
-h2, h3 {
-    font-weight: inherit;
-    margin: 0;
-}
-
-h2 {
-    font-size: 16px;
-    opacity: 0.87;
-}
-
-h3 {
-    font-size: 14px;
-    opacity: 0.54;
-}
-
-h4 {
-    font-size: 14px;
-    opacity: 0.87;
-    font-weight: 500;
-    margin-left: 32px;
 }
 
 #more {
@@ -185,8 +168,6 @@ ul, #hamList {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-weight: 500;
-    font-size: 14px;
 }
 
 #hamContainer {
@@ -240,4 +221,8 @@ ul, #hamList {
     box-shadow: inset 0px -2px 0px 0px red;
 }
 
+@media only screen
+    and (orientation: landscape) {
+
+}
 
