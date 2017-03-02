@@ -4,6 +4,8 @@ body {
     display: flex;
     flex-direction: row;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    display: flex;
+    flex-direction: row;
 }
 
 .left h5, #hamList a h5 {
@@ -239,9 +241,6 @@ ul, #hamList {
     --shadow-color: rgba(0,0,0,0.26);
 }
 
-.mdl-textfield__expandable-holder {
-
-}
 
 #scrim.active {
     --opacity: 0.5;
@@ -256,5 +255,13 @@ ul, #hamList {
 @media only screen
     and (orientation: landscape) {
 
+}
+
+#hamContainer.fixed {
+    position: static;
+}
+
+#menu.fixed {
+    visibility: hidden;
 }
 
