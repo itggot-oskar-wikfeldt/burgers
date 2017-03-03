@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>burgers</title>
-	<meta charset="utf-8">
+    <title>burgers - Välj måltid</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -11,14 +11,14 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
-<body>
+<body class="fixed">
 
-<div id="main">
+<div id="main" class="fixed">
     <div id="toolbar">
 
         <div id="mainbar">
             <div class="left">
-                <img src="img/menu.svg" class="icon fixed" id = "menu" onclick="openMenu()">
+                <img src="img/menu.svg" class="icon fixed" id="menu" onclick="openMenu()">
                 <h5>Välj måltid</h5>
             </div>
             <!-- Expandable Textfield -->
@@ -50,38 +50,41 @@
     </div>
 
     <div id="content">
+
+        <div id="choose-spacer"></div>
+
         <img src="img/max.svg" id="logo">
 
-        <ul>
-            <li class="first">
-                <div class="left">
-                    <img src="img/original.jpg" class="avatar">
-                    <div class="label">
-                        <div class="subheading">Originalmål</div>
-                        <div class="body1">Pommes frites & Coca Cola</div>
-                    </div>
-                </div>
-                <img src="img/info.svg" class="icon" class="info">
+        <ul class="demo-list-two mdl-list">
+            <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                    <img src="img/original.jpg" class="material-icons mdl-list__item-avatar">
+                    <span>Originalmål</span>
+                    <span class="mdl-list__item-sub-title">Pommes frites & Coca Cola</span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">info</i></a>
+                </span>
             </li>
-            <li>
-                <div class="left">
-                    <img src="img/frisco.jpg" class="avatar">
-                    <div class="label">
-                        <div class="subheading">Friscomål</div>
-                        <div class="body1">Creole fries & Fanta Mezzo</div>
-                    </div>
-                </div>
-                <img src="img/info.svg" class="icon" class="info">
+            <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                    <img src="img/frisco.jpg" class="material-icons mdl-list__item-avatar">
+                    <span>Friscomål</span>
+                    <span class="mdl-list__item-sub-title">Creole fries & Fanta Mezzo</span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">info</i></a>
+                </span>
             </li>
-            <li>
-                <div class="left">
-                    <img src="img/nuggets.jpg" class="avatar">
-                    <div class="label">
-                        <div class="subheading">Nuggetsmål</div>
-                        <div class="body1">Pommes frites and a large Coke</div>
-                    </div>
-                </div>
-                <img src="img/info.svg" class="icon" class="info">
+            <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                    <img src="img/nuggets.jpg" class="material-icons mdl-list__item-avatar">
+                    <span>Nuggetsmål</span>
+                    <span class="mdl-list__item-sub-title">Pommes frites and a large Coke</span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">info</i></a>
+                </span>
             </li>
         </ul>
     </div>
@@ -93,7 +96,7 @@
                 <img src="img/hamburger.svg" class="icon">
                 <h5 class="body2">Välj måltid</h5>
             </a>
-            <a href = "settings.html">
+            <a href="settings.html">
                 <img src="img/settings.svg" class="icon">
                 <h5 class="body2">Inställningar</h5>
             </a>

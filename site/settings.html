@@ -1,88 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>burgers</title>
-	<meta charset="utf-8">
+    <title>burgers - Inställningar</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
-<body>
+<body class="fixed">
 
-<div id="main">
+<div id="main" class="fixed">
     <div id="toolbar">
 
         <div id="mainbar">
             <div class="left">
-                <img src="img/menu.svg" class="icon" id = "menu" onclick="openMenu()">
-                <h1>Välj måltid</h1>
+                <img src="img/menu.svg" class="icon fixed" id="menu" onclick="openMenu()">
+                <h5>Inställningar</h5>
             </div>
-            <img src="img/search.svg" class="icon" id = "search">
-            <img src="img/more.svg" class="icon" id="more">
-        </div>
-
-        <div id="tabs">
-            <a href="choose_max.html" class="selected">
-                MAX
-            </a>
-            <a href="choose_mcdonalds.html">
-                MCDONALDS
-            </a>
-            <a href="choose_bk.html">
-                BURGER KING
-            </a>
         </div>
 
     </div>
 
     <div id="content">
-        <img src="img/max.svg" id="logo">
 
-        <ul>
-            <li class="first">
-                <div class="left">
-                    <img src="img/original.jpg" class="avatar">
-                    <div class="label">
-                        <h2>Originalmål</h2>
-                        <h3>Pommes frites & Coca Cola</h3>
-                    </div>
-                </div>
-                <img src="img/info.svg" class="icon" class="info">
+        <div id="settings-spacer"></div>
+
+        <ul class="demo-list-control mdl-list">
+            <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                  Hejsan
+                </span>
+                <span class="mdl-list__item-secondary-action">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                    <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked/>
+                  </label>
+                </span>
             </li>
-            <li>
-                <div class="left">
-                    <img src="img/frisco.jpg" class="avatar">
-                    <div class="label">
-                        <h2>Friscomål</h2>
-                        <h3>Creole fries & Fanta Mezzo</h3>
-                    </div>
-                </div>
-                <img src="img/info.svg" class="icon" class="info">
-            </li>
-            <li>
-                <div class="left">
-                    <img src="img/nuggets.jpg" class="avatar">
-                    <div class="label">
-                        <h2>Nuggetsmål</h2>
-                        <h3>Pommes frites and a large Coke</h3>
-                    </div>
-                </div>
-                <img src="img/info.svg" class="icon" class="info">
+            <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                  Visa burgare
+                </span>
+                <span class="mdl-list__item-secondary-action">
+                  <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-1">
+                    <input type="checkbox" id="list-switch-1" class="mdl-switch__input" checked/>
+                  </label>
+                </span>
             </li>
         </ul>
     </div>
 </div>
-<div id="hamContainer">
+<div id="hamContainer" class="fixed">
     <div id="hamburger">
         <div id="hamList">
             <a href="choose_max.html" class="first">
                 <img src="img/hamburger.svg" class="icon">
-                <h4>Välj måltid</h4>
+                <h5 class="body2">Välj måltid</h5>
             </a>
-            <a href = "settings.html" class="selected">
+            <a href="settings.html" class="selected">
                 <img src="img/settings.svg" class="icon">
-                <h4>Inställningar</h4>
+                <h5 class="body2">Inställningar</h5>
             </a>
         </div>
     </div>
