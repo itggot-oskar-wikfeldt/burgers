@@ -24,3 +24,27 @@ function closeMenu() {
         toggleActive(darkener, 'inactive');
     }
 }
+
+function mobileSearch() {
+    var searchBar = document.querySelector('#search_bar');
+    if (!searchBar.classList.contains('hidden-search')) {
+        searchBar.classList.remove('shown-search');
+        searchBar.classList.add('hidden-search');
+        setTimeout(function() {
+            $(searchBar).css('display', 'none');
+        }, 300);
+    }else {
+        $(searchBar).css('display', 'flex');
+        setTimeout(function() {
+            searchBar.classList.remove('hidden-search');
+            searchBar.classList.add('shown-search');
+        }, 50);
+
+
+    }
+
+}
+
+function clearSearch() {
+    document.getElementById("skrovmal_search").reset();
+}

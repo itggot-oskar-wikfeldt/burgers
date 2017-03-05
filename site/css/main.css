@@ -123,10 +123,10 @@ a {
 }
 
 #mainbar {
-    width: calc(100% - 32px);
+    width: calc(100% - 28px);
     height: 56px;
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 12px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -235,6 +235,9 @@ ul, #hamList {
     --shadow-color: rgba(0,0,0,0.26);
 }
 
+#list-settings .mdl-list__item {
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+}
 
 #scrim.active {
     --opacity: 0.5;
@@ -247,9 +250,64 @@ ul, #hamList {
     box-shadow: inset 0px -2px 0px 0px red;
 }
 
+#search_bar {
+    width: calc(100% - 24px);
+
+    position: fixed;
+    z-index: 2;
+    transition: opacity 0.3s cubic-bezier(.4,0,.2,1);
+    height: 56px;
+    background-color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
+input {
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding-left: 28px;
+}
+#skrovmal_search {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+input:focus {
+    outline: none;
+}
+
+.hidden-search {
+    opacity: 0;
+}
+
+.shown-search {
+    opacity: 1;
+}
+
+#search_large {
+    display: none;
+}
+
 @media only screen
     and (orientation: landscape)
     and (min-width: 1024px){
+
+    #search_large {
+        display: inline;
+    }
+
+    #search_small {
+        display: none;
+    }
 
     #menu {
         display: none;
@@ -276,6 +334,6 @@ ul, #hamList {
     #hamburger {
         margin-left: 0px;
         transition: margin-left 0.3s cubic-bezier(.4, 0, .2, 1), box-shadow 0.3s cubic-bezier(0, 1, 0, 1);
-        --shadow-color: rgba(0, 0, 0, 0.26);
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.26);
     }
 }
